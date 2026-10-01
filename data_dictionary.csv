@@ -1,0 +1,14 @@
+Field,Description,Source,Type
+RegionName,"Metro area name (e.g., 'New York, NY')",Zillow ZHVI,Categorical
+date,Year-month of the observation,Zillow / FRED (aligned),Datetime (YYYY-MM)
+home_value,Zillow Home Value Index - typical home value for the metro that month,Zillow ZHVI,Numeric ($)
+mortgage_rate,Average 30-year fixed mortgage rate for that month (national),FRED (MORTGAGE30US),Numeric (%)
+unemployment_rate,National unemployment rate for that month,FRED (UNRATE),Numeric (%)
+cpi,Consumer Price Index for that month (inflation measure),FRED (CPIAUCSL),Numeric (index value)
+next_month_value,Home value in the following month (used to build the target),Derived,Numeric ($)
+price_direction,"Target variable: 1 if next month's home value increased, 0 if it decreased",Derived,Binary (0/1)
+mortgage_rate_lag1,Mortgage rate from the previous month,Derived,Numeric (%)
+unemployment_rate_lag1,Unemployment rate from the previous month,Derived,Numeric (%)
+cpi_lag1,CPI from the previous month,Derived,Numeric (index value)
+home_value_mom_change,Month-over-month percent change in home value,Derived,Numeric (%)
+home_value_3mo_avg,3-month rolling average of home value,Derived,Numeric ($)
