@@ -1,6 +1,3 @@
-# housing-price-direction-prediction
-Predicts home price direction across 15 U.S. metros using FRED + Zillow data. Random Forest, 88% accuracy.
-
 # Home Price Direction Prediction
 
 Predicts whether home prices will rise or fall the following month across the 15 largest U.S. metro areas, using macroeconomic indicators (mortgage rates, unemployment, inflation) from FRED and home value data from Zillow's ZHVI.
